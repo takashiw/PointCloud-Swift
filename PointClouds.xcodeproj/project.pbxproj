@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D79FF0A01C679C760088B9FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF09F1C679C760088B9FD /* AppDelegate.swift */; };
+		D79FF0A21C679C760088B9FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0A11C679C760088B9FD /* ViewController.swift */; };
+		D79FF0A51C679C760088B9FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79FF0A31C679C760088B9FD /* Main.storyboard */; };
+		D79FF0A81C679C760088B9FD /* PointClouds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0A61C679C760088B9FD /* PointClouds.xcdatamodeld */; };
+		D79FF0AA1C679C760088B9FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79FF0A91C679C760088B9FD /* Assets.xcassets */; };
+		D79FF0AD1C679C760088B9FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79FF0AB1C679C760088B9FD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D79FF09C1C679C760088B9FD /* PointClouds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointClouds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79FF09F1C679C760088B9FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D79FF0A11C679C760088B9FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D79FF0A41C679C760088B9FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D79FF0A71C679C760088B9FD /* PointClouds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PointClouds.xcdatamodel; sourceTree = "<group>"; };
+		D79FF0A91C679C760088B9FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D79FF0AC1C679C760088B9FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D79FF0AE1C679C760088B9FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D79FF0991C679C760088B9FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D79FF0931C679C760088B9FD = {
+			isa = PBXGroup;
+			children = (
+				D79FF09E1C679C760088B9FD /* PointClouds */,
+				D79FF09D1C679C760088B9FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D79FF09D1C679C760088B9FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79FF09C1C679C760088B9FD /* PointClouds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79FF09E1C679C760088B9FD /* PointClouds */ = {
+			isa = PBXGroup;
+			children = (
+				D79FF09F1C679C760088B9FD /* AppDelegate.swift */,
+				D79FF0A11C679C760088B9FD /* ViewController.swift */,
+				D79FF0A31C679C760088B9FD /* Main.storyboard */,
+				D79FF0A91C679C760088B9FD /* Assets.xcassets */,
+				D79FF0AB1C679C760088B9FD /* LaunchScreen.storyboard */,
+				D79FF0AE1C679C760088B9FD /* Info.plist */,
+				D79FF0A61C679C760088B9FD /* PointClouds.xcdatamodeld */,
+			);
+			path = PointClouds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79FF09B1C679C760088B9FD /* PointClouds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79FF0B11C679C760088B9FD /* Build configuration list for PBXNativeTarget "PointClouds" */;
+			buildPhases = (
+				D79FF0981C679C760088B9FD /* Sources */,
+				D79FF0991C679C760088B9FD /* Frameworks */,
+				D79FF09A1C679C760088B9FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PointClouds;
+			productName = PointClouds;
+			productReference = D79FF09C1C679C760088B9FD /* PointClouds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D79FF0941C679C760088B9FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dhlee;
+				TargetAttributes = {
+					D79FF09B1C679C760088B9FD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HV4VTT4EX9;
+					};
+				};
+			};
+			buildConfigurationList = D79FF0971C679C760088B9FD /* Build configuration list for PBXProject "PointClouds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D79FF0931C679C760088B9FD;
+			productRefGroup = D79FF09D1C679C760088B9FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79FF09B1C679C760088B9FD /* PointClouds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D79FF09A1C679C760088B9FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79FF0AD1C679C760088B9FD /* LaunchScreen.storyboard in Resources */,
+				D79FF0AA1C679C760088B9FD /* Assets.xcassets in Resources */,
+				D79FF0A51C679C760088B9FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D79FF0981C679C760088B9FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79FF0A21C679C760088B9FD /* ViewController.swift in Sources */,
+				D79FF0A81C679C760088B9FD /* PointClouds.xcdatamodeld in Sources */,
+				D79FF0A01C679C760088B9FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D79FF0A31C679C760088B9FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79FF0A41C679C760088B9FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D79FF0AB1C679C760088B9FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79FF0AC1C679C760088B9FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D79FF0AF1C679C760088B9FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D79FF0B01C679C760088B9FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79FF0B21C679C760088B9FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PointClouds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tmsae.PointClouds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D79FF0B31C679C760088B9FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PointClouds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tmsae.PointClouds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D79FF0971C679C760088B9FD /* Build configuration list for PBXProject "PointClouds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79FF0AF1C679C760088B9FD /* Debug */,
+				D79FF0B01C679C760088B9FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79FF0B11C679C760088B9FD /* Build configuration list for PBXNativeTarget "PointClouds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79FF0B21C679C760088B9FD /* Debug */,
+				D79FF0B31C679C760088B9FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D79FF0A61C679C760088B9FD /* PointClouds.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D79FF0A71C679C760088B9FD /* PointClouds.xcdatamodel */,
+			);
+			currentVersion = D79FF0A71C679C760088B9FD /* PointClouds.xcdatamodel */;
+			path = PointClouds.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D79FF0941C679C760088B9FD /* Project object */;
+}
