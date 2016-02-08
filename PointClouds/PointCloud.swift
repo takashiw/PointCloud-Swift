@@ -14,7 +14,10 @@ class PointCloud {
         _points = modeler.scale(_points)
     }
     
-    func greedyMatch(reference:PointCloud) -> Double {
+    func greedyMatch(reference:PointCloud) -> Double? {
+        if(_points.count != reference._points.count)
+             return nil
+        
         let pointCount = Double(_points.count)
         let e = 0.50
         let step = floor(pow(pointcount, 1.0 - e))
@@ -31,14 +34,11 @@ class PointCloud {
         return min
     }
     
-    private func cloudDistance(reference:PointCloud, start:Double) -> Double? {
+    // 이쪽에 null값 때문에 에러날 수도 있겟다
+    private func cloudDistance(reference:PointCloud, start:Double) -> Double {
         let pts1 = _points
         let pts2 = reference._points
         let modeler = PointCloudModeler()
-        
-        if(pts1.count != pts2.count) {
-            return nil
-        }
         
         let pointCount = Double(_points.count)
         var matched = [Bool](count: _points.count, repeatedValue: false)
