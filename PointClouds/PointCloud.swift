@@ -42,6 +42,20 @@ class PointCloud {
         return newPoints
     }
     
+    // move this points to specific point that is passed as second parameter.
+    func translateTo(points:[Point], pt:Point) -> [Point] {
+        let c = centroid(points)
+        var newPoints = [Point](count: points.count, repeatedValue: Point(x:0.0, y:0.0, id:0))
+        
+        for (index, point) in points.enumerate() {
+            let qx = point.x + pt.x - c.x
+            let qy = point.y + pt.y - c.x
+            newPoints[index] = Point(x:qx, y:qy, id:point.id)
+        }
+        
+        return newPoints
+    }
+    
     // get the center point from points.
     func centroid(points:[Point]) -> Point {
         var _x = 0.0
