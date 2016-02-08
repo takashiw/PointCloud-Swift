@@ -42,6 +42,31 @@ class PointCloud {
         return newPoints
     }
     
+    func scale(points:[Point]) -> [Point] {
+        var minX = Double.infinity
+        var maxX = Double.infinity * -1.0
+        var minY = Double.infinity
+        var maxY = Double.infinity * -1.0
+        
+        for point in points {
+            minX = min(minX, point.x)
+            minY = min(minY, point.y)
+            maxX = max(maxX, point.x)
+            maxY = max(maxY, point.y)
+        }
+        
+        let size = Double(max(maxX - minX, maxY - minY))
+        var newPoints = [Point](count: points.count, repeatedValue: Point(x:0.0, y:0.0, id:0))
+        
+        for (index, point) in points.enumerate() {
+            let qx = (point.x - minX) / size
+            let qy = (point.y - minY) / size
+            newPoints[index] = Point(x:qx, y:qy, id:point.id)
+        }
+        
+        return newPoints
+    }
+    
     // move this points to specific point that is passed as second parameter.
     func translateTo(points:[Point], pt:Point) -> [Point] {
         let c = centroid(points)
