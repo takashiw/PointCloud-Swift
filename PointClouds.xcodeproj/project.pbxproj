@@ -15,7 +15,8 @@
 		D79FF0AD1C679C760088B9FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79FF0AB1C679C760088B9FD /* LaunchScreen.storyboard */; };
 		D79FF0B81C67ABE00088B9FD /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0B71C67ABE00088B9FD /* Point.swift */; };
 		D79FF0BA1C67AC360088B9FD /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0B91C67AC360088B9FD /* MatchResult.swift */; };
-		D79FF0BC1C67ADE10088B9FD /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0BB1C67ADE10088B9FD /* PointCloud.swift */; };
+		D79FF0BC1C67ADE10088B9FD /* PointCloudModeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0BB1C67ADE10088B9FD /* PointCloudModeler.swift */; };
+		D79FF0BF1C689BAD0088B9FD /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0BE1C689BAD0088B9FD /* PointCloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		D79FF0AE1C679C760088B9FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D79FF0B71C67ABE00088B9FD /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		D79FF0B91C67AC360088B9FD /* MatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
-		D79FF0BB1C67ADE10088B9FD /* PointCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloud.swift; sourceTree = "<group>"; };
+		D79FF0BB1C67ADE10088B9FD /* PointCloudModeler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloudModeler.swift; sourceTree = "<group>"; };
+		D79FF0BE1C689BAD0088B9FD /* PointCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,10 @@
 		D79FF09E1C679C760088B9FD /* PointClouds */ = {
 			isa = PBXGroup;
 			children = (
+				D79FF0BD1C689B9A0088B9FD /* util */,
 				D79FF0B61C67ABCE0088B9FD /* model */,
 				D79FF09F1C679C760088B9FD /* AppDelegate.swift */,
 				D79FF0A11C679C760088B9FD /* ViewController.swift */,
-				D79FF0BB1C67ADE10088B9FD /* PointCloud.swift */,
 				D79FF0A31C679C760088B9FD /* Main.storyboard */,
 				D79FF0A91C679C760088B9FD /* Assets.xcassets */,
 				D79FF0AB1C679C760088B9FD /* LaunchScreen.storyboard */,
@@ -80,8 +82,17 @@
 			children = (
 				D79FF0B71C67ABE00088B9FD /* Point.swift */,
 				D79FF0B91C67AC360088B9FD /* MatchResult.swift */,
+				D79FF0BE1C689BAD0088B9FD /* PointCloud.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		D79FF0BD1C689B9A0088B9FD /* util */ = {
+			isa = PBXGroup;
+			children = (
+				D79FF0BB1C67ADE10088B9FD /* PointCloudModeler.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +171,8 @@
 				D79FF0A21C679C760088B9FD /* ViewController.swift in Sources */,
 				D79FF0A81C679C760088B9FD /* PointClouds.xcdatamodeld in Sources */,
 				D79FF0A01C679C760088B9FD /* AppDelegate.swift in Sources */,
-				D79FF0BC1C67ADE10088B9FD /* PointCloud.swift in Sources */,
+				D79FF0BC1C67ADE10088B9FD /* PointCloudModeler.swift in Sources */,
+				D79FF0BF1C689BAD0088B9FD /* PointCloud.swift in Sources */,
 				D79FF0BA1C67AC360088B9FD /* MatchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
