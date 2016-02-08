@@ -17,6 +17,7 @@
 		D79FF0BA1C67AC360088B9FD /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0B91C67AC360088B9FD /* MatchResult.swift */; };
 		D79FF0BC1C67ADE10088B9FD /* PointCloudModeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0BB1C67ADE10088B9FD /* PointCloudModeler.swift */; };
 		D79FF0BF1C689BAD0088B9FD /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0BE1C689BAD0088B9FD /* PointCloud.swift */; };
+		D79FF0C11C68ABA70088B9FD /* PointCloudLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0C01C68ABA70088B9FD /* PointCloudLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D79FF0B91C67AC360088B9FD /* MatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
 		D79FF0BB1C67ADE10088B9FD /* PointCloudModeler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloudModeler.swift; sourceTree = "<group>"; };
 		D79FF0BE1C689BAD0088B9FD /* PointCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloud.swift; sourceTree = "<group>"; };
+		D79FF0C01C68ABA70088B9FD /* PointCloudLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloudLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				D79FF0B61C67ABCE0088B9FD /* model */,
 				D79FF09F1C679C760088B9FD /* AppDelegate.swift */,
 				D79FF0A11C679C760088B9FD /* ViewController.swift */,
+				D79FF0C01C68ABA70088B9FD /* PointCloudLibrary.swift */,
 				D79FF0A31C679C760088B9FD /* Main.storyboard */,
 				D79FF0A91C679C760088B9FD /* Assets.xcassets */,
 				D79FF0AB1C679C760088B9FD /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79FF0C11C68ABA70088B9FD /* PointCloudLibrary.swift in Sources */,
 				D79FF0B81C67ABE00088B9FD /* Point.swift in Sources */,
 				D79FF0A21C679C760088B9FD /* ViewController.swift in Sources */,
 				D79FF0A81C679C760088B9FD /* PointClouds.xcdatamodeld in Sources */,
