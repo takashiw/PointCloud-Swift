@@ -10,7 +10,7 @@ import UIKit
 
 class PointDrawingCanvas : UIView {
     var points = [Point]()
-    var id = 0
+    var id = 1
     var lastPoint = CGPoint.zero
     var tempImageView:UIImageView?
     
@@ -77,6 +77,6 @@ class PointDrawingCanvas : UIView {
     func clearCanvas() {
         self.points = [Point]()
         self.lastPoint = CGPoint.zero
-        self.id = 0
+        self.id = 1
     }
 }
