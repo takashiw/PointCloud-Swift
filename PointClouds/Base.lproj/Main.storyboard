@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Point Clouds-->
@@ -16,7 +17,40 @@
                     <view key="view" contentMode="scaleToFill" id="xKD-kC-d8U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrl-0H-aAb">
+                                <rect key="frame" x="75" y="100" width="171" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="I4X-9C-z47"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.3419471154" green="0.3419471154" blue="0.3419471154" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-tG-ZPQ">
+                                <rect key="frame" x="16" y="538" width="288" height="30"/>
+                                <state key="normal" title="Match !"/>
+                                <connections>
+                                    <action selector="matchButtonPressed:" destination="5KK-bs-8d6" eventType="touchUpInside" id="kYN-34-7gt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNA-iz-Nr1">
+                                <rect key="frame" x="-4" y="137" width="328" height="398"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gLk-tG-ZPQ" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" id="KpN-K4-cZM"/>
+                            <constraint firstItem="rrl-0H-aAb" firstAttribute="top" secondItem="GYI-8u-LLA" secondAttribute="bottom" constant="36" id="Nka-9u-m72"/>
+                            <constraint firstItem="rrl-0H-aAb" firstAttribute="centerX" secondItem="xKD-kC-d8U" secondAttribute="centerX" id="OFi-gx-wnu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yNA-iz-Nr1" secondAttribute="trailing" constant="-20" id="aSY-BB-Hwg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gLk-tG-ZPQ" secondAttribute="trailing" id="cDV-iR-CiV"/>
+                            <constraint firstItem="yNA-iz-Nr1" firstAttribute="top" secondItem="rrl-0H-aAb" secondAttribute="bottom" constant="8" id="fWs-SJ-ynh"/>
+                            <constraint firstItem="JWj-Bb-XH1" firstAttribute="top" secondItem="gLk-tG-ZPQ" secondAttribute="bottom" id="nTQ-uR-VLN"/>
+                            <constraint firstItem="gLk-tG-ZPQ" firstAttribute="top" secondItem="yNA-iz-Nr1" secondAttribute="bottom" constant="3" id="oHw-Ta-rzO"/>
+                            <constraint firstItem="yNA-iz-Nr1" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" constant="-20" id="zLI-i2-BVo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Point Clouds" id="e6f-zI-KGd">
                         <barButtonItem key="leftBarButtonItem" title="List" id="v3t-jp-YPd">
@@ -30,6 +64,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="drawingArea" destination="yNA-iz-Nr1" id="kSb-11-gGI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVO-de-QIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

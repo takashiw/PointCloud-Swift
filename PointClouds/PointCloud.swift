@@ -2,7 +2,7 @@ import UIKit
 
 class PointCloud {
     var name:String = ""
-    var _points:[Point] = nil
+    var _points:[Point] = [Point]()
     
     init(name:String, points:[Point]) {
         let modeler = PointCloudModeler()
@@ -10,28 +10,29 @@ class PointCloud {
         
         _points = points
         _points = modeler.resample(_points)
-        _points = modeler.translateTo(_points, Point(x:0.0, y:0.0, id:0))
+        _points = modeler.translateTo(_points, pt:Point(x:0.0, y:0.0, id:0))
         _points = modeler.scale(_points)
     }
     
     func greedyMatch(reference:PointCloud) -> Double? {
-        if(_points.count != reference._points.count)
+        if(_points.count != reference._points.count) {
              return nil
+        }
         
         let pointCount = Double(_points.count)
         let e = 0.50
-        let step = floor(pow(pointcount, 1.0 - e))
+        let step = floor(pow(pointCount, 1.0 - e))
         var minValue = Double.infinity
         
         var i = 0.0
         while(i < pointCount) {
-            let d1 = self.cloudDistance(reference, i)
-            let d2 = reference.cloudDistance(self, i)
+            let d1 = self.cloudDistance(reference, start:i)
+            let d2 = reference.cloudDistance(self, start:i)
             minValue = min(minValue, min(d1, d2))
             i += step
         }
         
-        return min
+        return minValue
     }
     
     // 이쪽에 null값 때문에 에러날 수도 있겟다
@@ -46,13 +47,14 @@ class PointCloud {
         var sum = Double(0)
         var i = start
         
-        do {
+        repeat {
             var index = -1
             var min = Double.infinity
             
-            for j in 0..<matched.count; {
+            for j in 0..<matched.count {
                 if(!matched[j]) {
-                    var d = modeler.getDistance(pts1[i], pts2[j])
+                    let k = Int(i)
+                    let d = modeler.getDistance(pts1[k], p2:pts2[j])
                     if(d < min) {
                         min = d
                         index = j
@@ -60,10 +62,11 @@ class PointCloud {
                 }
             }
             
-            if(index != -1)
+            if index != -1 {
                 matched[index] = true
+            }
             
-            var weight = 1.0 - ((i - start + pointCount) % pointCount) / pointCount
+            let weight = 1.0 - ((i - start + pointCount) % pointCount) / pointCount
             sum += weight * min
             i = (i + 1.0) % pointCount
         } while(i != start)
