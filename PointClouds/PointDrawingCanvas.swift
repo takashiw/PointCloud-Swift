@@ -9,6 +9,8 @@
 import UIKit
 
 class PointDrawingCanvas : UIView {
+    var points = [Point]()
+    var id = 0
     var lastPoint = CGPoint.zero
     var tempImageView:UIImageView?
     
@@ -31,13 +33,50 @@ class PointDrawingCanvas : UIView {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first {
             lastPoint = touch.locationInView(self)
+            let point = Point(x: Double(lastPoint.x), y: Double(lastPoint.y), id: self.id)
+            points.append(point)
         }
     }
+    
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         for touch in touches {
             let point = touch.locationInView(self)
-            print("x: \(point.x), y: \(point.y)")
+            let pointForCloud = Point(x: Double(point.x), y: Double(point.y), id: self.id)
+            points.append(pointForCloud)
+            
+            drawLine(lastPoint, to:point)
+            lastPoint = point
         }
+    }
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.id += 1
+    }
+    
+    // Quartz 2D
+    func drawLine(from:CGPoint, to:CGPoint) {
+        // Creates a bitmap-based graphics context and makes it the current context.
+        UIGraphicsBeginImageContext(self.frame.size)
+        let context = UIGraphicsGetCurrentContext()
+        tempImageView!.image?.drawInRect(CGRect(x:0, y:0, width:self.frame.size.width, height:self.frame.size.height))
+        
+        CGContextMoveToPoint(context, from.x, from.y)
+        CGContextAddLineToPoint(context, to.x, to.y)
+        CGContextSetLineCap(context, .Round)
+        CGContextSetLineWidth(context, CGFloat(3.0))
+        CGContextSetRGBStrokeColor(context, 0.3, 0.3, 0.3, 1.0)
+        CGContextSetBlendMode(context, .Normal)
+        
+        CGContextStrokePath(context)
+        
+        tempImageView!.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+    }
+    
+    func clearCanvas() {
+        self.points = [Point]()
+        self.lastPoint = CGPoint.zero
+        self.id = 0
     }
 }
