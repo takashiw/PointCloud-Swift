@@ -4,7 +4,7 @@ class PointCloud {
     var name:String = ""
     var _points:[Point] = [Point]()
     
-    init(name:String, points:[Point]) {
+    init(_ name:String, _ points:[Point]) {
         let modeler = PointCloudModeler()
         self.name = name
         
