@@ -4,17 +4,16 @@ class PointCloudModeler {
     let origin = Point(x:0.0, y:0.0, id:0)
     let numPoints = 32
     
-    
     // var keyword in function parameter makes it to be mutable.
     // resampling given points
     func resample(var points:[Point]) -> [Point] {
         let intervalLength = pathLength(points) / Double(numPoints - 1)
         var distance = 0.0
-        var newPoints = [Point](count: numPoints, repeatedValue: Point(x: 0.0, y:0.0, id:0))
-        newPoints[0] = Point(x: points[0].x, y:points[0].y, id:points[0].id)
-        var k = 1;
+        var newPoints = [Point]()
+        newPoints.append(Point(x: points[0].x, y:points[0].y, id:points[0].id))
         
-        for i in 1..<points.count {
+        var i = 1
+        while(i < points.count) {
             let p1 = points[i]
             let p2 = points[i-1]
             if(p1.id == p2.id) {
@@ -24,20 +23,21 @@ class PointCloudModeler {
                     let qy = p2.y + (((intervalLength - distance) / d) * (p1.y - p2.y))
                     let q = Point(x: qx, y: qy, id: p1.id)
                     
-                    if(k < numPoints){
-                        newPoints[k] = q
-                        // 'q point' will be next p2
-                        points[i] = q
-                        k += 1
-                    }
+                    newPoints.append(q)
+                    // 'q point' will be next p2
+                    points.insert(q, atIndex:i)
+                    distance = 0.0
                 } else {
                     distance += d
                 }
             }
+            i += 1
         }
         
-        let lastPoint = points.last!
-        newPoints[numPoints-1] = Point(x:lastPoint.x, y:lastPoint.y, id:lastPoint.id)
+        if(newPoints.count == numPoints - 1) {
+            let lastPoint = points.last!
+            newPoints.append(Point(x:lastPoint.x, y:lastPoint.y, id:lastPoint.id))
+        }
         
         return newPoints
     }
@@ -56,12 +56,12 @@ class PointCloudModeler {
         }
         
         let size = Double(max(maxX - minX, maxY - minY))
-        var newPoints = [Point](count: points.count, repeatedValue: Point(x:0.0, y:0.0, id:0))
+        var newPoints = [Point]()
         
-        for (index, point) in points.enumerate() {
+        for point in points {
             let qx = (point.x - minX) / size
             let qy = (point.y - minY) / size
-            newPoints[index] = Point(x:qx, y:qy, id:point.id)
+            newPoints.append(Point(x:qx, y:qy, id:point.id))
         }
         
         return newPoints
@@ -70,12 +70,12 @@ class PointCloudModeler {
     // move this points to specific point that is passed as second parameter.
     func translateTo(points:[Point], pt:Point) -> [Point] {
         let c = centroid(points)
-        var newPoints = [Point](count: points.count, repeatedValue: Point(x:0.0, y:0.0, id:0))
+        var newPoints = [Point]()
         
-        for (index, point) in points.enumerate() {
+        for point in points {
             let qx = point.x + pt.x - c.x
             let qy = point.y + pt.y - c.x
-            newPoints[index] = Point(x:qx, y:qy, id:point.id)
+            newPoints.append(Point(x:qx, y:qy, id:point.id))
         }
         
         return newPoints
