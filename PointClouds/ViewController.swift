@@ -10,15 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     var lastPoint = CGPoint.zero
+    var drawingCanvas:PointDrawingCanvas?
+    var _library = PointCloudLibrary.getDemoLibrary()
     @IBOutlet var drawingArea:UIView?
+    @IBOutlet var label:UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        let canvas = PointDrawingCanvas(frame: drawingArea!.bounds)
-        canvas.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        drawingArea!.addSubview(canvas)
+        drawingCanvas = PointDrawingCanvas(frame: drawingArea!.bounds)
+        drawingCanvas!.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        drawingArea!.addSubview(drawingCanvas!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +31,23 @@ class ViewController: UIViewController {
 
     // Match pattern, then represent what it is in view controller.
     @IBAction func matchButtonPressed(sender:AnyObject?) {
-        
+        if let canvas = drawingCanvas {
+            if !canvas.isEmpty() {
+                let pointCloud = PointCloud("input gesture", canvas.points)
+                let matchResult = _library.recognizeFromLibrary(pointCloud)
+                let text = "\(matchResult.name), score: \(matchResult.score)"
+                self.label!.text = text
+            } else {
+                self.label!.text = "No match result."
+            }
+        }
+    }
+    
+    // clear canvas
+    @IBAction func clearButtonPressed(sender:AnyObject?) {
+        if let canvas = drawingCanvas {
+            canvas.clearCanvas()
+        }
     }
 }
 

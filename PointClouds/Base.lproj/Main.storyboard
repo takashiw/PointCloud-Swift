@@ -27,31 +27,60 @@
                                 <color key="textColor" red="0.3419471154" green="0.3419471154" blue="0.3419471154" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-tG-ZPQ">
-                                <rect key="frame" x="-4" y="518" width="328" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="NLa-GF-e6u"/>
-                                </constraints>
-                                <state key="normal" title="Match !"/>
-                                <connections>
-                                    <action selector="matchButtonPressed:" destination="5KK-bs-8d6" eventType="touchUpInside" id="kYN-34-7gt"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNA-iz-Nr1">
-                                <rect key="frame" x="-4" y="137" width="328" height="378"/>
+                                <rect key="frame" x="-4" y="137" width="328" height="381"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="es9-TO-Nf6">
+                                <rect key="frame" x="-4" y="518" width="328" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnF-tK-YH6">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="anR-r7-nRZ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="fNg-3K-cn6"/>
+                                            <constraint firstAttribute="width" constant="164" id="toQ-Qn-Zvy"/>
+                                        </constraints>
+                                        <state key="normal" title="Match"/>
+                                        <connections>
+                                            <action selector="matchButtonPressed:" destination="5KK-bs-8d6" eventType="touchUpInside" id="hEk-dH-dNM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spV-xb-NaT">
+                                        <rect key="frame" x="164" y="0.0" width="164" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="2Yc-xR-K7e"/>
+                                            <constraint firstAttribute="width" constant="164" id="CCS-b6-tzb"/>
+                                            <constraint firstAttribute="height" constant="50" id="lzB-Tv-NFP"/>
+                                        </constraints>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearButtonPressed:" destination="5KK-bs-8d6" eventType="touchUpInside" id="LmK-eD-BZ3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mse-XC-gJl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="n5r-od-6aT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mse-XC-gJl"/>
+                                        <exclude reference="n5r-od-6aT"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gLk-tG-ZPQ" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" constant="-20" id="KpN-K4-cZM"/>
+                            <constraint firstItem="es9-TO-Nf6" firstAttribute="top" secondItem="yNA-iz-Nr1" secondAttribute="bottom" id="EdH-g1-f1a"/>
                             <constraint firstItem="rrl-0H-aAb" firstAttribute="top" secondItem="GYI-8u-LLA" secondAttribute="bottom" constant="36" id="Nka-9u-m72"/>
                             <constraint firstItem="rrl-0H-aAb" firstAttribute="centerX" secondItem="xKD-kC-d8U" secondAttribute="centerX" id="OFi-gx-wnu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="es9-TO-Nf6" secondAttribute="trailing" constant="-20" id="RG2-Di-AAg"/>
+                            <constraint firstItem="es9-TO-Nf6" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" constant="-20" id="ZHx-tN-5gR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yNA-iz-Nr1" secondAttribute="trailing" constant="-20" id="aSY-BB-Hwg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gLk-tG-ZPQ" secondAttribute="trailing" constant="-20" id="cDV-iR-CiV"/>
                             <constraint firstItem="yNA-iz-Nr1" firstAttribute="top" secondItem="rrl-0H-aAb" secondAttribute="bottom" constant="8" id="fWs-SJ-ynh"/>
-                            <constraint firstItem="JWj-Bb-XH1" firstAttribute="top" secondItem="gLk-tG-ZPQ" secondAttribute="bottom" id="nTQ-uR-VLN"/>
-                            <constraint firstItem="gLk-tG-ZPQ" firstAttribute="top" secondItem="yNA-iz-Nr1" secondAttribute="bottom" constant="3" id="oHw-Ta-rzO"/>
+                            <constraint firstItem="JWj-Bb-XH1" firstAttribute="top" secondItem="es9-TO-Nf6" secondAttribute="bottom" id="uVo-zt-wt0"/>
                             <constraint firstItem="yNA-iz-Nr1" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" constant="-20" id="zLI-i2-BVo"/>
                         </constraints>
                     </view>
@@ -69,6 +98,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="drawingArea" destination="yNA-iz-Nr1" id="kSb-11-gGI"/>
+                        <outlet property="label" destination="rrl-0H-aAb" id="Wcw-qp-tG9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVO-de-QIM" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -10,7 +10,7 @@ import UIKit
 
 class PointDrawingCanvas : UIView {
     var points = [Point]()
-    var id = 1
+    var id = 0
     var lastPoint = CGPoint.zero
     var tempImageView:UIImageView?
     
@@ -54,6 +54,10 @@ class PointDrawingCanvas : UIView {
         self.id += 1
     }
     
+    func isEmpty() -> Bool {
+        return self.tempImageView?.image == nil
+    }
+    
     // Quartz 2D
     func drawLine(from:CGPoint, to:CGPoint) {
         // Creates a bitmap-based graphics context and makes it the current context.
@@ -77,6 +81,7 @@ class PointDrawingCanvas : UIView {
     func clearCanvas() {
         self.points = [Point]()
         self.lastPoint = CGPoint.zero
-        self.id = 1
+        self.id = 0
+        self.tempImageView!.image = nil
     }
 }
