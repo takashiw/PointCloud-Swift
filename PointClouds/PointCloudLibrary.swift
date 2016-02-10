@@ -21,7 +21,7 @@ class PointCloudLibrary {
         if(u == -1) {
             return MatchResult(name: "No match", score: 0.0)
         } else {
-            let score = max((b - 2.0) / -2.0, 0.0)
+            let score = round(max((b - 2.0) / -2.0, 0.0) * 100)/100
             return MatchResult(name:pointClouds[u].name, score:score)
         }
     }
