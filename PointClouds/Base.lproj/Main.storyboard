@@ -19,13 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrl-0H-aAb">
-                                <rect key="frame" x="75" y="100" width="171" height="29"/>
+                                <rect key="frame" x="-4" y="100" width="328" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="171" id="I4X-9C-z47"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.3419471154" green="0.3419471154" blue="0.3419471154" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I4X-9C-z47"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNA-iz-Nr1">
                                 <rect key="frame" x="-4" y="137" width="328" height="381"/>
@@ -76,13 +81,20 @@
                             <constraint firstItem="es9-TO-Nf6" firstAttribute="top" secondItem="yNA-iz-Nr1" secondAttribute="bottom" id="EdH-g1-f1a"/>
                             <constraint firstItem="rrl-0H-aAb" firstAttribute="top" secondItem="GYI-8u-LLA" secondAttribute="bottom" constant="36" id="Nka-9u-m72"/>
                             <constraint firstItem="rrl-0H-aAb" firstAttribute="centerX" secondItem="xKD-kC-d8U" secondAttribute="centerX" id="OFi-gx-wnu"/>
+                            <constraint firstItem="rrl-0H-aAb" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" constant="-20" id="Q8F-xQ-Xhb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="es9-TO-Nf6" secondAttribute="trailing" constant="-20" id="RG2-Di-AAg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rrl-0H-aAb" secondAttribute="trailing" constant="-20" id="Uwb-bE-qL1"/>
                             <constraint firstItem="es9-TO-Nf6" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" constant="-20" id="ZHx-tN-5gR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yNA-iz-Nr1" secondAttribute="trailing" constant="-20" id="aSY-BB-Hwg"/>
                             <constraint firstItem="yNA-iz-Nr1" firstAttribute="top" secondItem="rrl-0H-aAb" secondAttribute="bottom" constant="8" id="fWs-SJ-ynh"/>
                             <constraint firstItem="JWj-Bb-XH1" firstAttribute="top" secondItem="es9-TO-Nf6" secondAttribute="bottom" id="uVo-zt-wt0"/>
                             <constraint firstItem="yNA-iz-Nr1" firstAttribute="leading" secondItem="xKD-kC-d8U" secondAttribute="leadingMargin" constant="-20" id="zLI-i2-BVo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OFi-gx-wnu"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Point Clouds" id="e6f-zI-KGd">
                         <barButtonItem key="leftBarButtonItem" title="List" id="v3t-jp-YPd">
