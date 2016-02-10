@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D73259A31C6B3590000FFB56 /* PatternListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73259A21C6B3590000FFB56 /* PatternListController.swift */; };
 		D79FF0A01C679C760088B9FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF09F1C679C760088B9FD /* AppDelegate.swift */; };
 		D79FF0A21C679C760088B9FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FF0A11C679C760088B9FD /* ViewController.swift */; };
 		D79FF0A51C679C760088B9FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79FF0A31C679C760088B9FD /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D73259A21C6B3590000FFB56 /* PatternListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternListController.swift; sourceTree = "<group>"; };
 		D79FF09C1C679C760088B9FD /* PointClouds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointClouds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79FF09F1C679C760088B9FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D79FF0A11C679C760088B9FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				D79FF0B61C67ABCE0088B9FD /* model */,
 				D79FF09F1C679C760088B9FD /* AppDelegate.swift */,
 				D79FF0A11C679C760088B9FD /* ViewController.swift */,
+				D73259A21C6B3590000FFB56 /* PatternListController.swift */,
 				D79FF0C01C68ABA70088B9FD /* PointCloudLibrary.swift */,
 				D79FF0C71C69C86B0088B9FD /* PointDrawingCanvas.swift */,
 				D79FF0A31C679C760088B9FD /* Main.storyboard */,
@@ -175,6 +178,7 @@
 			files = (
 				D79FF0C11C68ABA70088B9FD /* PointCloudLibrary.swift in Sources */,
 				D79FF0C81C69C86B0088B9FD /* PointDrawingCanvas.swift in Sources */,
+				D73259A31C6B3590000FFB56 /* PatternListController.swift in Sources */,
 				D79FF0B81C67ABE00088B9FD /* Point.swift in Sources */,
 				D79FF0A21C679C760088B9FD /* ViewController.swift in Sources */,
 				D79FF0A81C679C760088B9FD /* PointClouds.xcdatamodeld in Sources */,
@@ -329,6 +333,7 @@
 				D79FF0B31C679C760088B9FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
