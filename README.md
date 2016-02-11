@@ -1,4 +1,4 @@
-# PointCloud-ios
+# PointCloud implemented by Swift.
 This project is implementation of $P-Recognizer Algorithm, 
 it is developed in iOS platform using Swift.
 
