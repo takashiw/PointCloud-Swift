@@ -39,7 +39,7 @@ class PointCloudLibrary {
             Point(x:345,y:9,id:1),Point(x:345,y:87,id:1),
             Point(x:351,y:8,id:2),Point(x:363,y:8,id:2),Point(x:372,y:9,id:2),Point(x:380,y:11,id:2),Point(x:386,y:14,id:2),Point(x:391,y:17,id:2),Point(x:394,y:22,id:2),Point(x:397,y:28,id:2),Point(x:399,y:34,id:2),Point(x:400,y:42,id:2),Point(x:400,y:50,id:2),Point(x:400,y:56,id:2),Point(x:399,y:61,id:2),Point(x:397,y:66,id:2),Point(x:394,y:70,id:2),Point(x:391,y:74,id:2),Point(x:386,y:78,id:2),Point(x:382,y:81,id:2),Point(x:377,y:83,id:2),Point(x:372,y:85,id:2),Point(x:367,y:87,id:2),Point(x:360,y:87,id:2),Point(x:355,y:88,id:2),Point(x:349,y:87,id:2)
             ]))
-        _library.pointClouds.append(PointCloud("P", [
+        _library.pointClouds.append(PointCloud("💩", [
             Point(x:507,y:8,id:1),Point(x:507,y:87,id:1),
             Point(x:513,y:7,id:2),Point(x:528,y:7,id:2),Point(x:537,y:8,id:2),Point(x:544,y:10,id:2),Point(x:550,y:12,id:2),Point(x:555,y:15,id:2),Point(x:558,y:18,id:2),Point(x:560,y:22,id:2),Point(x:561,y:27,id:2),Point(x:562,y:33,id:2),Point(x:561,y:37,id:2),Point(x:559,y:42,id:2),Point(x:556,y:45,id:2),Point(x:550,y:48,id:2),Point(x:544,y:51,id:2),Point(x:538,y:53,id:2),Point(x:532,y:54,id:2),Point(x:525,y:55,id:2),Point(x:519,y:55,id:2),Point(x:513,y:55,id:2),Point(x:510,y:55,id:2)
             ]))
