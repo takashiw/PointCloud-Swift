@@ -1,0 +1,149 @@
+[
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 297,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 371,
+  "remove": 8,
+  "text": "UIApplicationLaunchOptionsKey",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 383,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 538,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 1056,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 1494,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 1725,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 1991,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2363,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2592,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2614,
+  "remove": 15,
+  "text": ".urls(f",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2631,
+  "remove": 12,
+  "text": ": .d",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2662,
+  "remove": 8,
+  "text": "n",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2673,
+  "remove": 1,
+  "text": "u",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2983,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 2997,
+  "remove": 13,
+  "text": ".url(f",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 3020,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 3105,
+  "remove": 4,
+  "text": "f",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 3694,
+  "remove": 6,
+  "text": "a",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 3902,
+  "remove": 4,
+  "text": "(of",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 3910,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 3943,
+  "text": "Name",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 3950,
+  "remove": 3,
+  "text": "at",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 4174,
+  "text": " as AnyObject?",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 4241,
+  "text": " as AnyObject?",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift",
+  "offset": 5284,
+  "remove": 1,
+  "text": "m",
+ }
+]

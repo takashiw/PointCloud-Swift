@@ -1,0 +1,50 @@
+[
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 438,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 1102,
+  "text": "file",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 1129,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 1368,
+  "text": "repeating: false, ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 1387,
+  "remove": 23,
+  "text": "t",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 2071,
+  "remove": 3,
+  "text": ".truncatingRemainder(dividingBy: ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 2085,
+  "text": ")",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 2156,
+  "remove": 3,
+  "text": ".truncatingRemainder(dividingBy: ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift",
+  "offset": 2169,
+  "text": ")",
+ }
+]

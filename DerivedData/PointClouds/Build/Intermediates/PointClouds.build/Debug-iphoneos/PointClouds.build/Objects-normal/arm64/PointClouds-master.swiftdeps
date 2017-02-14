@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "2cdabd89a5722a7cdc601d89f102a055"
+build_time: [540402157, 186612000]
+inputs:
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudLibrary.swift": [540402115, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointDrawingCanvas.swift": [540402115, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PatternListController.swift": [540402115, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/Point.swift": [540400763, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/ViewController.swift": [540402115, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/AppDelegate.swift": [540402115, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift": [540402115, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloud.swift": [540402115, 0]
+  "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/MatchResult.swift": [540400763, 0]

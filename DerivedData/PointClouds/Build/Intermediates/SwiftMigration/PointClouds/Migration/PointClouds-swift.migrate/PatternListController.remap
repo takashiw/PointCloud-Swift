@@ -1,0 +1,36 @@
+[
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PatternListController.swift",
+  "offset": 337,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PatternListController.swift",
+  "offset": 372,
+  "remove": 10,
+  "text": "t",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PatternListController.swift",
+  "offset": 393,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PatternListController.swift",
+  "offset": 476,
+  "remove": 1,
+  "text": "(w",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PatternListController.swift",
+  "offset": 490,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PatternListController.swift",
+  "offset": 622,
+  "text": "_ ",
+ }
+]

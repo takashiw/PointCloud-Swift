@@ -1,0 +1,49 @@
+[
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 225,
+  "remove": 3,
+  "text": "_",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 266,
+  "text": "var points = points\n        ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 1113,
+  "remove": 6,
+  "text": "t",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 1528,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 2356,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 2760,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 3088,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 3453,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/Takashi/Documents/GitHub/PointCloud-Swift/PointClouds/PointCloudModeler.swift",
+  "offset": 3892,
+  "text": "_ ",
+ }
+]
